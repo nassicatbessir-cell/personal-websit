@@ -1,0 +1,52 @@
+.navbar {
+    background: linear-gradient(90deg, #4a90e2, #9013fe);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: white;
+}
+
+.hero {
+    background: linear-gradient(135deg, #6f86d6, #48c6ef);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translatey(0); }
+    50% { transform: translatey(-30px); }
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.features {
+    background: linear-gradient(90deg, #48c6ef, #6f86d6);
+    padding: 50px 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer {
+    background: linear-gradient(270deg, #4a90e2, #9013fe);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
